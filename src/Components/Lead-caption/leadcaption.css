@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #182524;
+    --color-secondary: #E2F1E6;
+  }
+
+.container-form {
+    background-color:var(--color-secondary);
+    padding: 30px;
+    display: block;
+}
+
+.container-form h3 {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}

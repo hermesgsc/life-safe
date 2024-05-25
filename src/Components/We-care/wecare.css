@@ -1,0 +1,45 @@
+:root {
+    --color-primary: #182524;
+    --color-secondary: #E2F1E6;
+}
+
+.container-wecare {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-wecare img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.overlay-title h3 {
+    font-size: 20px;
+    margin-bottom: 200px;
+    width: 300px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--color-secondary);
+    margin-top: 40px;
+}
+
+.overlay-text p {
+    padding: 10px;
+}
