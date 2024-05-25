@@ -1,16 +1,68 @@
 :root {
     --color-primary: #182524;
     --color-secondary: #E2F1E6;
-  }
+}
 
 .container-form {
-    background-color:var(--color-secondary);
+    background-color: var(--color-secondary);
     padding: 30px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-form h3 {
     font-size: 26px;
     font-weight: 600;
     padding-bottom: 20px;
+    text-align: center; /* Center the heading text */
+    color: var(--color-primary);
+}
+
+.container-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container-form input {
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensures the container takes full width for centering */
+}
+
+.button-send {
+    color: var(--color-secondary);
+    border-radius: 26px;
+    border: none;
+    background-color: var(--color-primary);
+    padding: 10px 40px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.button-send:hover {
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+::-webkit-input-placeholder {
+    color: var(--color-secondary);
+    font-weight: 100;
 }
