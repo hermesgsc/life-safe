@@ -6,7 +6,7 @@ const WeCare = () => {
       <img src="./images/wecare.png" alt="" />
 
       <div className="overlay-title">
-        <h3>Nós nos preocupamos com a segurança sua e de sua família</h3>
+        <h3>Sua segurança é o que importa</h3>
       </div>
       <div className="overlay-text">
         <p>+ de 1 milhão de clientes atendidos</p>
