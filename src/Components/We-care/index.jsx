@@ -6,7 +6,7 @@ const WeCare = () => {
     <section className="secao-com-imagem">
       <div className="conteudo">
         <div className="texto">
-          <h1>Nós nos preocupamos com a segurança da sua família</h1>
+          <h1>A nossa preocupação é a segurança da sua família</h1>
           <p>+ de 1 milhão de clientes atendidos</p>
           <p>50 anos de ajudando milhares de famílias</p>
           <p>Franquias em todos os estados do Brasil</p>
