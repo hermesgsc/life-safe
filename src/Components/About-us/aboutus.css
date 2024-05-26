@@ -29,3 +29,63 @@
     display: block;
     margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+    .container-about-us {
+      display: block;
+      padding: 80px 150px;
+      justify-content: space-between;
+      align-items: flex-start; /* Alinha os itens ao topo do contêiner */
+    }
+  
+    .container-about-us h2 {
+      font-size: 40px;
+      width: 250px;
+      font-weight: 700;
+      margin-bottom: 20px; /* Adiciona um espaço entre o h2 e o p */
+    }
+  
+    .container-about-us p {
+      line-height: 30px;
+      font-size: 22px;
+      margin-bottom: 20px; /* Adiciona um espaço maior entre o p e a imagem */
+    }
+  
+    .container-about-us img {
+      width: 80%;
+      max-width: 400px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .container-about-us {
+        display: flex;
+        align-items: center;
+        padding: 80px 300px; /* Ajustei o padding para reduzir a distância */
+        gap: 10px;
+      }
+      
+      .content-left {
+        flex: 1;
+      }
+      
+      .container-about-us h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      
+      .container-about-us p {
+        line-height: 30px;
+        font-size: 22px;
+        max-width: 800px;
+
+      }
+      
+      .content-right img {
+        width: 100%;
+        max-width: 400px; /* Reduzi a largura máxima da imagem para evitar que ela fique muito grande */
+      }
+            
+      
+    }

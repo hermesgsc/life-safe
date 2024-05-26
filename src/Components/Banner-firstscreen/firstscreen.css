@@ -1,55 +1,84 @@
 :root {
-    --color-primary: #182524;
-    --color-secondary: #E2F1E6;
-  }
+  --color-primary: #182524;
+  --color-secondary: #E2F1E6;
+}
 
 .container-banner {
   position: relative;
-  width: 100%; /* ajuste conforme necessário */
-  height: auto; /* ajuste conforme necessário */
+  width: 100%;
+  height: auto;
 }
 
 .banner-logo {
-display: flex;
-  width: 100%; /* ajuste conforme necessário */
-  height: auto; /* ajuste conforme necessário */
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .logo {
   display: block;
-  width: 100%; /* ajuste conforme necessário */
-  height: auto; /* ajuste conforme necessário */
+  width: 100%;
+  height: auto;
 }
 
 .background {
-  position: relative; /* imagem de fundo */
+  width: 100%;
+  height: auto; /* Altere para auto para permitir que a altura seja determinada pelo conteúdo */
+  max-height: 768px; /* Limita a altura máxima da imagem */
+  object-fit: cover;
+  object-position: center top; /* Garante que a parte superior da imagem seja sempre visível */
 }
-
 .overlay {
   position: absolute;
   top: -20px;
   left: -30px;
-    width: 120px;
+  width: 120px;
   transform: translate(50%, 50%);
 }
 
 .banner-button {
-    position: absolute;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--color-primary);
-    background-color: var(--color-secondary);
-    border: none;
-    bottom: 50px;
-    left: -40px;
-    padding: 10px;
-    border-radius: 28px;
-    width: 120px;
-    transform: translate(50%, 50%);
-    transition: all 0.3s;
+  position: absolute;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border: none;
+  padding: 10px;
+  border-radius: 28px;
+  width: 120px;
+  bottom: 50px;
+  left: -40px;
+  transform: translate(50%, 50%);
+  transition: all 0.3s;
+}
+
+.banner-button:hover {
+  cursor: pointer;
+} 
+
+/* Para resoluções maiores */
+@media (min-width: 768px) {
+  .banner-button {
+    bottom: auto;
+    left: auto;
+    top: 30px;
+    right: 20px;
+    transform: none;
   }
-  
-  .banner-button:hover {
-    cursor: pointer;
-    transform: translate(50%, 50%) scale(1.1); 
+
+  .background {
+    height: 500px; /* Altura explícita para a imagem */
   }
+}
+
+@media (min-width: 1200px) {
+  .background {
+    height: 650px; /* Altura explícita para a imagem */
+  }
+}
+
+@media (min-width: 1400px) {
+  .background {
+    height: 1000px; /* Altura explícita para a imagem */
+  }
+}
