@@ -50,6 +50,8 @@
   left: -40px;
   transform: translate(50%, 50%);
   transition: all 0.3s;
+  text-align: center;
+  text-decoration: none;
 }
 
 .banner-button:hover {
